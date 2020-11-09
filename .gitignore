@@ -18,6 +18,8 @@
 # misc
 .DS_Store
 *.pem
+.vscode
+presentation/
 
 # debug
 npm-debug.log*

@@ -1,0 +1,22 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+  	match /polls/{id} {
+      allow read;
+      allow write: if request.auth != null;
+    }
+    match /polls/{pollId}/votes/{userId} {
+      allow read;
+      allow write: if request.auth != null && 
+      	request.auth.uid == userId && 
+        canVote(pollId, userId);
+    }
+    match /{document=**} {
+      allow read, write: if false;
+    }
+    
+    function canVote(pollId, userId) {
+    	return !exists(/databases/$(database)/documents/polls/$(pollId)/votes/$(userId));
+    }
+  }
+}

@@ -1,22 +1,38 @@
 {
-  "name": "with-typescript",
-  "version": "1.0.0",
-  "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start",
-    "type-check": "tsc"
-  },
-  "dependencies": {
-    "next": "latest",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
-  },
-  "devDependencies": {
-    "@types/node": "^12.12.21",
-    "@types/react": "^16.9.16",
-    "@types/react-dom": "^16.9.4",
-    "typescript": "4.0"
-  },
-  "license": "MIT"
+    "name": "wics-polls-test",
+    "version": "1.0.0",
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "start": "next start",
+        "type-check": "tsc"
+    },
+    "dependencies": {
+        "@material-ui/core": "^4.11.0",
+        "@material-ui/icons": "^4.9.1",
+        "chart.js": "^2.9.3",
+        "firebase": "^7.23.0",
+        "formik": "^2.2.0",
+        "formik-material-ui": "^3.0.0",
+        "next": "latest",
+        "react": "^16.12.0",
+        "react-chartjs-2": "^2.10.0",
+        "react-dom": "^16.12.0",
+        "react-firebase-hooks": "^2.2.0",
+        "yup": "^0.29.3"
+    },
+    "devDependencies": {
+        "@types/node": "^12.12.21",
+        "@types/react": "^16.9.16",
+        "@types/react-dom": "^16.9.4",
+        "@types/yup": "^0.29.8",
+        "@typescript-eslint/eslint-plugin": "^4.4.0",
+        "@typescript-eslint/parser": "^4.4.0",
+        "eslint": "^7.10.0",
+        "eslint-config-prettier": "^6.12.0",
+        "eslint-plugin-react": "^7.21.3",
+        "prettier": "^2.1.2",
+        "typescript": "4.0"
+    },
+    "license": "MIT"
 }
